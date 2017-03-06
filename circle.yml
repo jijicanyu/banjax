@@ -1,6 +1,6 @@
 dependencies:
   override:
-    - sudo apt-get install tcl-dev libyaml-cpp-dev libzmq-dev libboost-dev libconfig++-dev libssl-dev
+    - sudo apt-get install tcl-dev libyaml-cpp-dev libzmq-dev libboost-dev libconfig++-dev libssl-dev libboost-system-dev libboost-test-dev
     - ls; pwd; nproc
     - cd ..; git clone git@github.com:google/re2.git && cd re2; make && sudo make install
     - sudo cp ~/re2/obj/so/lib* /lib/
